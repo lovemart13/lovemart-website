@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – Lovemart</title>
+<style>
+:root {
+  --bg: #fffaf8;
+  --text: #2a2024;
+  --muted: #6e5f65;
+  --accent: #d6336c;
+  --card: #ffffff;
+  --line: #ecdde2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1417;
+    --text: #f3e9ec;
+    --muted: #b6a4ab;
+    --accent: #ff6b9a;
+    --card: #251b20;
+    --line: #3a2b32;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+header, main, footer { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 24px; padding-bottom: 8px; }
+.brand { font-weight: 700; font-size: 1.15rem; color: var(--accent); text-decoration: none; }
+nav { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+nav a:hover, nav a[aria-current="page"] { color: var(--accent); }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 24px 0 8px; }
+h2 { font-size: 1.25rem; margin: 32px 0 8px; }
+h3 { font-size: 1.05rem; margin: 20px 0 4px; }
+p, li { margin: 8px 0; }
+ul { padding-left: 22px; }
+a { color: var(--accent); }
+.stand { color: var(--muted); font-size: 0.9rem; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 4px 18px 12px;
+  margin: 16px 0;
+}
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+footer { margin-top: 48px; padding-bottom: 32px; color: var(--muted); font-size: 0.9rem; }
+footer a { color: var(--muted); }
+@media (max-width: 600px) {
+  .table-wrap { overflow-x: visible; }
+  table, tbody, tr, td { display: block; width: 100%; }
+  thead { display: none; }
+  tr {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 8px 14px;
+    margin: 12px 0;
+  }
+  td { border-bottom: none; padding: 6px 0; }
+  td::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+}
+
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html">Lovemart</a>
+  <nav>
+    <a href="support.html" aria-current="page">Support</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
+</header>
+<main>
+<h1>Support</h1>
+<p>Hier findest du Hilfe zur App „Lovemart“. Lovemart ist nur für Personen ab 18 Jahren.</p>
+
+<div class="card">
+  <h2>Kontakt</h2>
+  <p>Schreib uns an <a href="mailto:support@lovemart.app">support@lovemart.app</a>. Wir lesen jede Nachricht und antworten so bald wie möglich.</p>
+  <p>Bei Fragen zu einer Meldung nenne bitte den Tag und den Markt, in dem es passiert ist. Schreib bitte keine privaten Daten in die E-Mail, die wir nicht brauchen.</p>
+</div>
+
+<h2>Häufige Fragen</h2>
+
+<h3>Wie melde ich eine Person?</h3>
+<p>Tippe in der App auf das Menü der Person (bei Profilen und im Chat) und wähle „Melden“. Such dir einen Grund aus. Wir sehen uns die Meldung an.</p>
+
+<h3>Wie blockiere ich eine Person?</h3>
+<p>Tippe im selben Menü auf „Blockieren“. Ihr seht euch dann nicht mehr und könnt euch keine Herzen senden. Ein laufendes Date mit der Person wird beendet.</p>
+
+<h3>Wie hebe ich eine Blockierung auf?</h3>
+<p>Öffne in der App dein Profil und dann „Blockierte Personen“. Dort kannst du jede Person wieder freigeben.</p>
+
+<h3>Wie lösche ich mein Konto?</h3>
+<p>Öffne in der App dein Profil und wähle „Account löschen“. Folge den Schritten. Dabei werden dein Profil, dein Geburtsdatum, deine Check-ins, deine Nachrichten und dein Konto gelöscht. Wenn du dich mit Apple angemeldet hast, wird auch die Verbindung zu deiner Apple-ID widerrufen. Welche Reste aus technischen Gründen bleiben, steht in der <a href="datenschutz.html#loeschen">Datenschutzerklärung</a>.</p>
+
+<h3>Warum kann ich nicht einchecken?</h3>
+<p>Einchecken geht nur, wenn du dich im Umkreis von 30 Metern um einen Markt befindest und die App deinen Standort verwenden darf. Prüfe in den iPhone-Einstellungen unter „Datenschutz &amp; Sicherheit“ → „Ortungsdienste“, ob Lovemart den Standort nutzen darf. Nach einem Match gibt es am selben Tag im selben Markt keinen weiteren Check-in.</p>
+
+<h3>Was passiert mit meinen Daten?</h3>
+<p>Das steht in der <a href="datenschutz.html">Datenschutzerklärung</a>. Für Auskunft, Berichtigung oder Löschung schreib an <a href="mailto:support@lovemart.app">support@lovemart.app</a>.</p>
+
+<h3>Ich fühle mich bedroht oder belästigt</h3>
+<p>Blockiere und melde die Person in der App. Bei akuter Gefahr rufe die Polizei an (Notruf 110).</p>
+
+<p class="stand">Stand: 26. Oktober 2026</p>
+
+</main>
+<footer>
+  <p>Lovemart · <a href="mailto:support@lovemart.app">support@lovemart.app</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a></p>
+</footer>
+</body>
+</html>
